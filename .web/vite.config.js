@@ -71,6 +71,7 @@ export default defineConfig((config) => ({
   server: {
     port: process.env.PORT,
     hmr: true,
+    allowedHosts: "all",
     watch: {
       ignored: [
         "**/.web/backend/**",
