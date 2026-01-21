@@ -5,7 +5,6 @@ import os
 config = rx.Config(
     app_name="p1",
     host="0.0.0.0",
-    port=int(os.environ.get("PORT", 10000)),
     disable_plugins=["reflex.plugins.sitemap.SitemapPlugin"],
 )
 #port=int(os.environ.get("PORT", 3000)),
@@ -13,3 +12,7 @@ config = rx.Config(
 config = rx.Config(
     app_name="p1",
 )'''
+
+# api_url="https://TU-BACKEND.onrender.com",
+# pip install -r requirements.txt && reflex export
+# reflex run --env prod --backend-host 0.0.0.0 --backend-port $PORT
