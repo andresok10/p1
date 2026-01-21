@@ -69,10 +69,11 @@ export default defineConfig((config) => ({
     hmr: false,
   },
   //allowedHosts: "all",
+  //allowedHosts: ["p1-5g0q.onrender.com"],
   server: {
     port: process.env.PORT,
     hmr: true,
-    allowedHosts: ["p1-5g0q.onrender.com"],
+    allowedHosts: "all",
     watch: {
       ignored: [
         "**/.web/backend/**",
