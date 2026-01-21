@@ -5,6 +5,7 @@ import os
 config = rx.Config(
     app_name="p1",
     host="0.0.0.0",
+    port=int(os.environ.get("PORT", 10000)),
     disable_plugins=["reflex.plugins.sitemap.SitemapPlugin"],
 )
 #port=int(os.environ.get("PORT", 3000)),
