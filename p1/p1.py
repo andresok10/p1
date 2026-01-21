@@ -21,11 +21,12 @@ class State(rx.State):
     def change_site(self, site: str):
         self.current_site = site
 
+# on_click=lambda: State.change_site(site_name),
 # COMPONENTES
 def tab_button(site_name: str):
     return rx.button(
         site_name,
-        on_click=lambda: State.change_site(site_name),
+        on_click=State.change_site(site_name),
         size="2",
         variant="solid",
         color_scheme="blue",
