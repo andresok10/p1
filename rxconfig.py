@@ -4,6 +4,7 @@ import os
 
 config = rx.Config(
     app_name="p1",
+    host="0.0.0.0",
     pwa=False,
     disable_plugins=["reflex.plugins.sitemap.SitemapPlugin"],
 )
